@@ -1,3 +1,3 @@
 # corbin.github.io
 
-![../Analytics2025/3PRatesFlippedAxes.png]
+![](./Analytics2025/3PRatesFlippedAxes.png)
