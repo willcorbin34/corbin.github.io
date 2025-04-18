@@ -1,0 +1,15 @@
+# Quick Hitters
+
+## 3 Point Rate Exploration: 2024-2025 NBA Regular Season
+
+![](./quick_hitters/3PRatesFlippedAxes.png)
+
+![](./quick_hitters/3POffvs3PDef.png)
+
+![](./quick_hitters/3PRate_diff_bar.png)
+
+![](./quick_hitters/change_in_3PT_rates.png)
+
+![](./quick_hitters/3s_vs_off_rtg_change.png)
+
+Data via NBA.com.
