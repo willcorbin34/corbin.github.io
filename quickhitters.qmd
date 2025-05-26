@@ -1,15 +1,26 @@
 # Quick Hitters
 
+## Team Offensive Rebounding Rates: Playoffs vs Regular Season
+
+From watching the 2025 playoffs, it has felt like there have been more offensive rebounds, especially late game. I wanted to take a quick look at if the numbers follow that intuition.
+
+![](./quick_hitters/offensive_rebounding_playoffs/change_in_raw_oreb.png)
+
+![](./quick_hitters/offensive_rebounding_playoffs/change_in_raw_oreb.png)
+
+Per usual, looking at the offensive rebounding rates rather than the raw numbers indicate a more noticable difference. This is most likely due to the pace of playoff games slowing down in comparison to the regular season.
+Out of the teams in the conference finals, Minnesota and New York have had increased offensive rebounding rates. Oklahoma City and Indiana have had decreased rates.
+
 ## 3 Point Rate Exploration: 2024-2025 NBA Regular Season
 
-![](./quick_hitters/3PRatesFlippedAxes.png)
+![](./quick_hitters/three_point_rate/3PRatesFlippedAxes.png)
 
-![](./quick_hitters/3POffvs3PDef.png)
+![](./quick_hitters/three_point_rate/3POffvs3PDef.png)
 
-![](./quick_hitters/3PRate_diff_bar.png)
+![](./quick_hitters/three_point_rate/3PRate_diff_bar.png)
 
-![](./quick_hitters/change_in_3PT_rates.png)
+![](./quick_hitters/three_point_rate/change_in_3PT_rates.png)
 
-![](./quick_hitters/3s_vs_off_rtg_change.png)
+![](./quick_hitters/three_point_rate/3s_vs_off_rtg_change.png)
 
 Data via NBA.com.
