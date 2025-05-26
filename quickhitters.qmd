@@ -1,4 +1,9 @@
-# Quick Hitters
+---
+title: "Quick Hitters"
+format:
+  html:
+    code-fold: true
+---
 
 ## Team Offensive Rebounding Rates: Playoffs vs Regular Season
 
