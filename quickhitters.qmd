@@ -11,7 +11,7 @@ From watching the 2025 playoffs, it has felt like there have been more offensive
 
 ![](./quick_hitters/offensive_rebounding_playoffs/change_in_raw_oreb.png)
 
-![](./quick_hitters/offensive_rebounding_playoffs/change_in_raw_oreb.png)
+![](./quick_hitters/offensive_rebounding_playoffs/change_in_oreb_rate.png)
 
 Per usual, looking at the offensive rebounding rates rather than the raw numbers indicate a more noticable difference. This is most likely due to the pace of playoff games slowing down in comparison to the regular season.
 Out of the teams in the conference finals, Minnesota and New York have had increased offensive rebounding rates. Oklahoma City and Indiana have had decreased rates.
