@@ -10,6 +10,8 @@ website:
         text: Home
       - href: quickhitters.qmd
         text: Quick Hitters
+      - href: https://willcorbin.quarto.pub/georgetown-basketball/
+        text: Georgetown
       - about.qmd
 
 format:
