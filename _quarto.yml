@@ -11,8 +11,9 @@ website:
       - href: quickhitters.qmd
         text: Quick Hitters
       - text: Projects
+        href: projects.qmd
         menu:
-        - href: projects/draft_model_2025_writeup.html
+        - href: projects/draft_model/draft_model_2025_writeup.ipynb
           text: Draft Prospect Ratings
       - href: https://sites.google.com/georgetown.edu/georgetown-basketball?usp=sharing
         text: Georgetown Internal Site
