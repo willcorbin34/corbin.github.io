@@ -10,8 +10,12 @@ website:
         text: Home
       - href: quickhitters.qmd
         text: Quick Hitters
-      - href: https://willcorbin.quarto.pub/georgetown-basketball/
-        text: Georgetown
+      - text: Projects
+        menu:
+        - href: projects/draft_model_2025_writeup.html
+          text: Draft Prospect Ratings
+      - href: https://sites.google.com/georgetown.edu/georgetown-basketball?usp=sharing
+        text: Georgetown Internal Site
       - about.qmd
 
 format:

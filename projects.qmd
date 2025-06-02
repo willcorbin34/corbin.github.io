@@ -1,0 +1,7 @@
+---
+title: Projects
+---
+
+## 2025 NBA Draft Prospect Rating
+
+Found [here](projects/draft_model_2025_writeup.ipynb).
