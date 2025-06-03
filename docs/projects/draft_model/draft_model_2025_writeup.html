@@ -140,10 +140,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <a class="nav-link" href="https://sites.google.com/georgetown.edu/georgetown-basketball?usp=sharing"> 
 <span class="menu-text">Georgetown Internal Site</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../about.html"> 
-<span class="menu-text">About</span></a>
-  </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -193,13 +189,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>This prospect rating method is heavily inspires by Stephen Shea’s “College Prospect Rating 1.0” from his book “Basketball Analytics: Spatial Tracking.”</p>
-<p>This tool is helpful in identifying players that “the analytics” like. It can be used as yet another tool in evaluating NBA Draft prospects, but should not be the main source of doing so. For example, this model had Alperen Sengun as the top player in his draft class. This isn’t to say that he should’ve been the number one pick, but maybe indicate that he had more value than people thought and could’ve been drafted higher than 16th.</p>
+<p>This prospect rating method is heavily inspired by Stephen Shea’s “College Prospect Rating 1.0” from his book Basketball Analytics: Spatial Tracking.</p>
+<p>This tool is helpful in identifying players that “the analytics” favor. It can be used as another tool in evaluating NBA Draft prospects but should not be the primary method for doing so. For example, this model had Alperen Şengün as the top player in his draft class. This isn’t to say that he should’ve been the number one pick, but it may indicate that he had more value than people thought and could’ve been drafted higher than 16th.</p>
 <section id="methodology" class="level2">
 <h2 class="anchored" data-anchor-id="methodology">Methodology</h2>
-<p>The logic behind this prospect rating system is that players are proven to get more consistent over time, so we should pay more attention to their best performances rather than the games where they have an off-night. Instead of taking full season averages, we take the average of the player’s top 10 performances in many of the stat categories from the 2024-25 season (except 3P%, FT%, and 3PA).</p>
-<p>I created a function to automatically collect the box score stats (via basketball reference) from the top college players in the 2025 draft class. The most basic stats collected are points, assists, and total rebounds. Offensive rebounds, blocks, and steals serve as an applied athleticism category. 3P%, FT%, and 3PA are our shooting category. Age rating is how many seasons the player played, with some seniors getting a 3.5 instead of a 4 if they are still younger than 23.</p>
-<p>Once the data is collected, the methodology is as follows: 1. Standardize each stat column across all players in the dataset. 2. Add up each player’s standardized columns to get a raw total. 3. Scale to make the raw total positive and to make the differences between player ratings clearer (A ton of players get bunched up in similar ranges, so this adds some separation). 4. Scale based on the age rating to penalize the older players who have had more years to gain consistency.</p>
+<p>The logic behind this prospect rating system is that players tend to become more consistent over time, so we should pay more attention to their best performances rather than the games where they had an off night. Instead of taking full-season averages, we use the average of each player’s top 10 performances in many stat categories from the 2024–25 season (except for 3P%, FT%, and 3PA).</p>
+<p>I created a function to automatically collect box score stats (via Basketball Reference) from the top college players in the 2025 draft class. The most basic stats collected are points, assists, and total rebounds. Offensive rebounds, blocks, and steals are grouped into an applied athleticism category. 3P%, FT%, and 3PA form the shooting category. The age rating reflects how many seasons the player has played, with some seniors receiving a 3.5 instead of a 4 if they are still younger than 23.</p>
+<p>Once the data is collected, the methodology is as follows:</p>
+<ol type="1">
+<li><p>Standardize each stat column across all players in the dataset.</p></li>
+<li><p>Add up each player’s standardized columns to get a raw total.</p></li>
+<li><p>Scale the raw total to make all values positive and to better separate player ratings (many players end up in similar ranges, so this adds some distinction).</p></li>
+<li><p>Adjust the score based on the age rating to penalize older players who’ve had more years to develop consistency.</p></li>
+</ol>
 </section>
 <section id="results" class="level2">
 <h2 class="anchored" data-anchor-id="results">Results</h2>
@@ -325,9 +327,9 @@ Yanic Konan-Niederhauser       4.506839
 <section id="next-steps" class="level2">
 <h2 class="anchored" data-anchor-id="next-steps">Next Steps:</h2>
 <ul>
-<li>Add in international players. They are harder to deal with because it is hard to know how good leagues are, and often because they are the pros, these prospects do not play as many minutes.</li>
-<li>Change the stats to a per 40 minutes basis to account for players who play more or less minutes.</li>
-<li>Start the process over, but within position groups.</li>
+<li>Add in international players. International players are more difficult to rate, often due to confusion over how good leagues are, or a lack of minutes played in the good leagues. I have treated them the same as college players in the past, but with my new method of automatically collecting the data, I have yet to expand it to include international players.</li>
+<li>Change the stats to a per 40 minutes basis to account for players who play varying minutes.</li>
+<li>Apply the process to specific position groups.</li>
 </ul>
 </section>
 <section id="code" class="level2">

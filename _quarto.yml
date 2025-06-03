@@ -17,7 +17,6 @@ website:
           text: Draft Prospect Ratings
       - href: https://sites.google.com/georgetown.edu/georgetown-basketball?usp=sharing
         text: Georgetown Internal Site
-      - about.qmd
 
 format:
   html:
